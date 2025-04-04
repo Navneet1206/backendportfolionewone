@@ -139,5 +139,8 @@ if (process.env.NODE_ENV !== "production") {
   });
 }
 
+app.get("/", (req, res) => {
+  res.status(200).send("✅ Hello from Navneet's backend deployed on Vercel!");
+});
 // For Vercel deployment
 module.exports = app;
